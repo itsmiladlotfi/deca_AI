@@ -1,4 +1,3 @@
-from dotenv import load_dotenv, find_dotenv
 import os
 import openai
 import time
