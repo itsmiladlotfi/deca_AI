@@ -8,8 +8,8 @@ import joblib
 import tiktoken
 
 
-load_dotenv(find_dotenv())
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key='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'
+
 
 prompt = f"""
 
@@ -26,8 +26,8 @@ def get_prompt(title):
     """
     return p
 def chat_gen(prompt, tmp = 0.7, model_name="gpt-3.5-turbo"):
-    load_dotenv(find_dotenv())
-    openai.api_key = os.getenv("OPENAI_API_KEY")
+    openai.api_key='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'
+
 
     messages = [{"role": "user", "content": prompt}]
     res = openai.ChatCompletion.create(
