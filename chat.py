@@ -6,7 +6,7 @@ import re
 import tiktoken
 
 
-openai.api_key='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'
+openai.api_key='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'
 
 
 prompt = f"""
@@ -24,7 +24,7 @@ def get_prompt(title):
     """
     return p
 def chat_gen(prompt, tmp = 0.7, model_name="gpt-3.5-turbo"):
-    openai.api_key='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'
+    openai.api_key='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'
 
 
     messages = [{"role": "user", "content": prompt}]
