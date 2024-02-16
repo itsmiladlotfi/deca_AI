@@ -6,7 +6,7 @@ import re
 import tiktoken
 import streamlit as st
 
-open_ai_key = st.secrets['open_ai_key']
+openai.api_key = st.secrets['open_ai_key']
 
 prompt = f"""
 
