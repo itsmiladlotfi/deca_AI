@@ -8,6 +8,6 @@ if prompt:
     with st.spinner('Wait for it...'):
         time.sleep(40)
 
-    with st.chat_message("user"):
+    with st.chat_message("ai"):
         prompt = chat.get_prompt(prompt)
         st.write(chat.chat_gen(prompt, model_name="gpt-3.5-turbo"))
