@@ -4,10 +4,9 @@ import time
 import requests
 import re
 import tiktoken
+import streamlit as st
 
-
-openai.api_key = os.getenv("GITHUB_ENV")
-
+open_ai_key = st.secrets['open_ai_key']
 
 prompt = f"""
 
